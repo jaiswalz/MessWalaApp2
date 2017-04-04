@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MessWalaApp</string>
+    <string name="AdminLogin">Admin Login</string>
+    <string name="CustomerLogin">Customer Login</string>
+    <string name="AdminSignIn">Sign In</string>
+    <string name="LogIn">Log In</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="CustomerSignIn">Sign In</string>
+    <string name="Logout">Logout</string>
+    <string name="LogInAdmin">Log In</string>
+
+</resources>

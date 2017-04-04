@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginTop="23dp"
+        android:id="@+id/AdminEmail"
+        android:layout_below="@+id/AdminName"
+        android:layout_alignLeft="@+id/AdminName"
+        android:layout_alignStart="@+id/AdminName"
+        android:hint="E-mail"
+        android:singleLine="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/AdminName"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="35dp"
+        android:hint="Name"
+        android:singleLine="true"
+        android:selectAllOnFocus="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/AdminSignIn"
+        android:layout_toStartOf="@+id/AdminSignIn" />
+
+    <Button
+        android:text="@string/AdminSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="43dp"
+        android:id="@+id/AdminSignIn"
+        android:layout_below="@+id/AdminPhone"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onSignInClick" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/AdminPassword"
+        android:hint="Password"
+        android:singleLine="true"
+        android:layout_below="@+id/AdminEmail"
+        android:layout_alignLeft="@+id/AdminEmail"
+        android:layout_alignStart="@+id/AdminEmail"
+        android:layout_marginTop="23dp" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/AdminPhone"
+        android:hint="Phone Number"
+        android:singleLine="true"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/AdminConPassword"
+        android:layout_alignLeft="@+id/AdminConPassword"
+        android:layout_alignStart="@+id/AdminConPassword"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/AdminPassword"
+        android:layout_alignLeft="@+id/AdminPassword"
+        android:layout_alignStart="@+id/AdminPassword"
+        android:id="@+id/AdminConPassword"
+        android:hint="Confirm Password"
+        android:layout_marginTop="23dp"/>
+
+
+</RelativeLayout>
